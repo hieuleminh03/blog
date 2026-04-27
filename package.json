@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Markdown-driven static blog for GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/build.cjs",
+    "new:post": "node src/new-post.cjs",
+    "serve": "npm run build && npx --yes serve dist",
+    "screenshot": "node screenshot.cjs",
+    "test": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "marked": "^18.0.2",
+    "puppeteer": "^24.42.0"
+  }
+}
